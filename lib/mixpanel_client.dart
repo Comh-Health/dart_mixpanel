@@ -156,7 +156,7 @@ class MixpanelAnalyticsClient {
     try {
       final response = await http.get(Uri(
         scheme: 'https',
-        host: 'api.mixpanel.com',
+        host: 'api-eu.mixpanel.com',
         path: endpoint,
         queryParameters: {
           'data': base64Url.encode(utf8.encode(json.encode(data))),
